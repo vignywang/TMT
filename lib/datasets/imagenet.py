@@ -107,10 +107,6 @@ class ImageNetDataset(Dataset):
             else:
                 self.image_dir = os.path.join(self.root, 'train')
                 image = Image.open(os.path.join(self.image_dir, name + '.JPEG')).convert('RGB')
-
-
-
-            
             
         image_size = list(image.size)
             
