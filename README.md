@@ -31,3 +31,5 @@ TEST:
 ```
 You could change the DATADIR for the absolute path of the dataset or the BATCH_SIZE depending on your memory.
 
+## Trained Models
+Google Deive : https://drive.google.com/drive/folders/1S4aXhPRpOmQjIop7tkZxC5FD-hkXBHbj?usp=drive_link
