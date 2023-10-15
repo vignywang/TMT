@@ -2,7 +2,7 @@
 The official implementation of “Token Masking Transformer for Weakly Supervised Object Localization”
 
 To do：
-- [x] Evaluation code and Trained model for TMT
+- [] Trained model for TMT
 - [x] Training code (Coming soon)
 
 ### Installation
