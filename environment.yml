@@ -1,0 +1,24 @@
+# run: conda env create -f environment.yml
+name: TMT
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - pip
+  - pip:
+      - opencv-python
+      - Pillow
+      - tensorboard
+      - timm
+      - matplotlib
+      - scipy
+      - sklearn
+      - einops
+      - mmcls
+      - PyYAML
+  - pytorch
+  - torchvision
+  - cudatoolkit
+  - tqdm
