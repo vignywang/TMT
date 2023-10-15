@@ -4,6 +4,7 @@ The official implementation of “Token Masking Transformer for Weakly Supervise
 To do：
 - [x] Trained model for TMT
 - [ ] Training code (Coming soon)
+- [ ] Testing code (Coming soon)
 
 ### Installation
 ```
