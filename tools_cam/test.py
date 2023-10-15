@@ -57,7 +57,10 @@ def creat_model(cfg, args):
         checkpoint = torch.load(args.resume)
         pretrained_dict = {}
 
-        for k, v in checkpoint['state_dict'].items():
+        if 'state_dict' in list(checkpoint.keys):
+            checkpoint = checkpoint['state_dict']
+
+        for k, v in checkpoint.items():
             k_ = '.'.join(k.split('.')[1:])
 
             pretrained_dict.update({k_: v})
