@@ -17,27 +17,7 @@ CUB: https://www.vision.caltech.edu/datasets/cub_200_2011/
 ISVRC: https://www.image-net.org/challenges/LSVRC/2012/
 ```
 
-Then the absolute paths should be specified in the following config file paths.
-```
-.
-├── CUB
-│ ├── conformer_scm_small_patch16_224.yaml
-│ ├── deit_scm_base_patch16_224.yaml
-│ ├── deit_scm_small_patch16_224.yaml
-│ ├── deit_tscam_base_patch16_224.yaml
-│ ├── deit_tscam_small_patch16_224.yaml
-│ ├── deit_tscam_tiny_patch16_224.yaml
-│ └── vit_scm_small_patch16_224.yaml
-└── ILSVRC
- ├── conformer_tscam_small_patch16_224.yaml
- ├── deit_scm_base_patch16_224.yaml
- ├── deit_scm_small_patch16_224.yaml
- ├── deit_tscam_base_patch16_224.yaml
- ├── deit_tscam_small_patch16_224.yaml
- └── deit_tscam_tiny_patch16_224.yaml
-```
-
-For instance in CUB/deit_scm_small_patch16_224.yaml:
+For instance in CUB/deit_tmt_scm_small_patch16_224.yaml:
 ```
 DATA:
  DATASET: CUB
