@@ -47,9 +47,9 @@ class ImageNetDataset(Dataset):
         self.crop_size = cfg.DATA.CROP_SIZE
 
         if self.is_train:
-            datalist0 = os.path.join(self.root, 'ILSVRC2012_list', 'train.txt')
+            datalist = os.path.join(self.root, 'ILSVRC2012_list', 'train.txt')
             self.image_dir = os.path.join(self.root, 'train')
-            datalist_new = [datalist0]
+            datalist = [datalist]
 
         else:
             datalist = os.path.join(self.root, 'ILSVRC2012_list', 'val_folder_new.txt')
@@ -100,13 +100,9 @@ class ImageNetDataset(Dataset):
         else:        
             name = self.names[idx]
             label = self.labels[idx]
-            # print(name)
-            if 'val' in name:
-                self.image_dir = os.path.join(self.root, 'val')
-                image = Image.open(os.path.join(self.image_dir, name + '.JPEG')).convert('RGB')
-            else:
-                self.image_dir = os.path.join(self.root, 'train')
-                image = Image.open(os.path.join(self.image_dir, name + '.JPEG')).convert('RGB')
+
+            self.image_dir = os.path.join(self.root, 'train')
+            image = Image.open(os.path.join(self.image_dir, name + '.JPEG')).convert('RGB')
             
         image_size = list(image.size)
             
