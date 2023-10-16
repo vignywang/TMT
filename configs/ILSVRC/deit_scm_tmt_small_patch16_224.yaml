@@ -6,13 +6,13 @@ BASIC:
   NUM_WORKERS: 6
 
 MODEL:
-  ARCH: deit_tmt_scm_small_patch16_224
+  ARCH: deit_scm_tmt_small_patch16_224
   CAM_THR: 0.12
   TOP_K: 1
 
 DATA:
   DATASET: ImageNet
-  DATADIR: /data2/wcw/xuwenhao/dataset/ILSVRC2012_Images/raw
+  DATADIR: /data2/xxx/dataset/ILSVRC2012_Images/raw
   NUM_CLASSES: 1000
   RESIZE_SIZE : 256
   CROP_SIZE : 224
