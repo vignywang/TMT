@@ -57,6 +57,12 @@ CUBV2=False
 ```
 You can test MaxboxAcc when setting it to True.
 
+### Resume Training
+Add the ${pth_file_path} to continue the training if needed.
+```
+ --resume ${pth_file_path}
+```
+
 ### Testing
 Specify the path of .pth file for testing and visualization. 
 ```
@@ -66,10 +72,5 @@ python tools_cam/test.py --config_file ./configs/CUB/deit_scm_tmt_small_patch16_
 python tools_cam/test.py --config_file ./configs/ILSVRC/deit_scm_tmt_small_patch16_224.yaml --resume ${pth_file_path}
 ```
 Set up testing at tools_cam/test.py
-```
 
-### Resume Training
-Add the ${pth_file_path} to continue the training if needed.
-```
- --resume ${pth_file_path}
-```
+
