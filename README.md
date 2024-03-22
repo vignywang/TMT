@@ -1,11 +1,11 @@
 # TMT
 The official implementation of “Token Masking Transformer for Weakly Supervised Object Localization”
-
+<!--
 To do：
 - [x] Trained model for TMT
 - [x] Training code (Coming soon)
 - [x] Testing code (Coming soon)
-
+-->
 ### Installation
 ```
 conda env create -f environment.yml
